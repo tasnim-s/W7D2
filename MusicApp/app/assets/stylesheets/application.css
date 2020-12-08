@@ -16,13 +16,20 @@
  
  header {
      font-family: 'Roboto', sans-serif;
- }
- #loginbuttons {
      display: flex;
-     justify-content: right;
+     justify-content: space-between;
+ }
+
+ body {
+     font-family: 'Roboto', sans-serif;
  }
 
  a {
      background-color: green;
      border-radius: 25px;
+ }
+
+ form {
+     display: flex;
+     justify-content: flex-start;
  }

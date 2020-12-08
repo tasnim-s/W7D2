@@ -1,0 +1,12 @@
+<h1>Bands</h1>
+
+<ol>
+<% @bands.each do |band| %>
+<li><%= band.name %>
+<form action="<%= band_url(band) %>" method="post">
+<input type="hidden" name="_method" value="delete">
+    <%= auth_token %>
+    <button>Delete</button>
+</form></li>
+<% end %>
+</ol>
